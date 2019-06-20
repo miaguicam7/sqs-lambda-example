@@ -54,7 +54,7 @@ Resources:
       Handler: index.handler
       MemorySize: 128
       Role: !Sub ${ConsumerLambdaRole.Arn}
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       Timeout: 60
       Environment:
         Variables:
@@ -101,7 +101,7 @@ Resources:
       Handler: index.handler
       MemorySize: 128
       Role: !Sub ${WorkerLambdaRole.Arn}
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       Timeout: 60
       Environment:
         Variables:
